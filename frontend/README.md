@@ -1,13 +1,17 @@
 # Dragons of Mugloar
 
-Web app to play the Dragons of Mugloar game (https://www.dragonsofmugloar.com) developed using React.js and powered by Vite. Start a game, pick ads to solve, and buy shop items.
+Web app to play the Dragons of Mugloar game ([https://www.dragonsofmugloar.com](https://www.dragonsofmugloar.com)) developed using React.js and powered by Vite. Start a game, pick ads to solve, and buy shop items.
 
 ## Setup
 
-    npm install
-    npm run dev
+You need to have [Node.js](https://nodejs.org/en/download/) installed. Node includes npm as its default package manager.
 
-Open the URL as mentioned in the terminal (http://localhost:5173 by default).
+```
+npm install
+npm run dev
+```
+
+Open the URL as mentioned in the terminal ([http://localhost:5173](http://localhost:5173) by default).
 
 ## Features
 
@@ -18,6 +22,8 @@ Open the URL as mentioned in the terminal (http://localhost:5173 by default).
 - Every Ad contains reward/risk ratio to help the player decide which ad to pick.
 - Extra risky ads that hurt the reputation of the player are also tagged with `extra risk` labels.
 
+
+
 ## Suggestions
 
 When recommendations are on, the suggested ad is the safest one on the board (easiest probability, then higher reward). Steal and kill jobs are skipped if people, state, or underworld is already at -2 or worse. Reputations go stale, so the client auto-checks reputation every 3 turns (that check costs a turn).
@@ -25,5 +31,5 @@ When recommendations are on, the suggested ad is the safest one on the board (ea
 ## Handling encrypted Ads
 
 - Encrypted ads are decoded using the encrypted field of the Ad. After examining the responses, two types of encryption were found. Encrypted value 1 corresponds to Base64 encoding and encrypted value 2 corresponds to rot13 encoding. The encoding was found by matching probability string with known probability strings after trying to decode using different encoding methods.
-- Other future encryption types if encountered are skipped currently. 
+- Other future encryption types if encountered are skipped currently.
 

@@ -2,13 +2,24 @@
 
 Bot for the Dragons of Mugloar API. Plays until lives run out.
 
+## Prerequisites
+
+You need to have [Node.js](https://nodejs.org/en/download/) installed. Node includes npm as its default package manager.
+
 ## Run
 
-To run the project, you need to run these two commands:
+Clone the project and cd into this folder.
+Commands to run the application
 
     npm install
+    
+    # play one game
     npm start
-    npm start -- --games=N  => when you want to run multiple games back to back
+    # play N games back to back
+    npm start -- --games=N
+
+## Test
+    npm test
 
 ## How ads are picked
 
