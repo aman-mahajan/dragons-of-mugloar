@@ -1,6 +1,6 @@
 # Dragons of Mugloar
 
-Web app to play the Dragons of Mugloar game ([https://www.dragonsofmugloar.com](https://www.dragonsofmugloar.com)) developed using React.js and powered by Vite. Start a game, pick ads to solve, and buy shop items.
+Web app to play the Dragons of Mugloar game ([https://dragonsofmugloar.com](https://dragonsofmugloar.com)) developed using React.js and powered by Vite. Start a game, pick ads to solve, and buy shop items.
 
 ## Setup
 
